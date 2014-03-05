@@ -11,14 +11,14 @@ this project</h3>
      Callback method integrated
 
 <h3>Code sample:</h3>
-<h4>to load images from internet, use 'ImageFetcher' and from resource, use 'ImageResizer'</h4>
+<h4>To load images from internet, use 'ImageFetcher' and from resource, use 'ImageResizer'</h4>
 
 <h5>Variables:</h5>
      private static final String IMAGE_CACHE_DIR = "USE_AS_YOU_WISH";//the images will be cashed in this dir
      private ImageFetcher imageLoader; //use to load image from internet
      private ImageResizer imageLoader; //use to load image from resource
 
-<h5>in onCreate():</h5>
+<h5>In onCreate():</h5>
      int longest = (ScreenHeight > ScreenWidth ? ScreenHeight : ScreenWidth) / 2;
      ImageCacheParams cacheParams = new ImageCacheParams(getActivity() or this, IMAGE_CACHE_DIR);
      cacheParams.setMemCacheSizePercent(0.25f); // Set memory cache to 25% of app memory
@@ -33,7 +33,7 @@ this project</h3>
      imageLoader.loadImage(URL, imageView, null); // to load image from internet
      imageLoader.loadImage(R.drawable.image_id, imageView, null); // to load image from internet
      
-<h5>in onPause():</h5>     
+<h5>In onPause():</h5>     
      @Override
 	   public void onPause() {
 		   super.onPause();
@@ -43,14 +43,14 @@ this project</h3>
 		   mHandler.removeCallbacks(mUpdateTimeTask);
 	   }
 
-<h5>in onResume():</h5>
+<h5>In onResume():</h5>
 	   @Override
 	   public void onResume() {
 		   super.onResume();
 		   imageLoader.setExitTasksEarly(false);
 	   }
 	   
-<h5>in onDestroy():</h5>	   
+<h5>In onDestroy():</h5>	   
 	   @Override
      public void onDestroy() {
          super.onDestroy();
