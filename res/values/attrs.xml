@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="com.displayer.CircleImageView">
+		<attr name="stroke_width" format="float" />
+		<attr name="stroke_color" format="string" />
+	</declare-styleable>
+	
+	<declare-styleable name="com.displayer.RoundedBitmapDisplayer">
+		<attr name="round_pixel" format="integer" />
+	</declare-styleable>
+</resources>
