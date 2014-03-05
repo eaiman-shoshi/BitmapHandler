@@ -39,15 +39,14 @@ this project</h3>
          super.onPause();
          imageLoader.setPauseWork(false);
          imageLoader.setExitTasksEarly(true);
-	 imageLoader.flushCache();
-	 mHandler.removeCallbacks(mUpdateTimeTask); 
+	     imageLoader.flushCache();
      }
 
 <h5>In onResume():</h5>
      @Override
      public void onResume() {
          super.onResume();
-	 imageLoader.setExitTasksEarly(false);
+	     imageLoader.setExitTasksEarly(false);
      }
 	   
 <h5>In onDestroy():</h5>	   
@@ -60,12 +59,12 @@ this project</h3>
 <h5>Callback:</h5>	   
      public class YOUR_CLASS extends Activity/Fragment implements Callback{
      
-         @Override
-	 public void getDrawable(Drawable drawable, Object name, File file) {
-	     // 'drawable' is the Drawable, which is setted on the ImageView.
-	     // 'name' is the URL or the resource id.
-	     // 'file' is the File, where the setted image is cached.
-	 }
+             @Override
+	     public void getDrawable(Drawable drawable, Object name, File file) {
+	         // 'drawable' is the Drawable, which is setted on the ImageView.
+	         // 'name' is the URL or the resource id.
+	         // 'file' is the File, where the setted image is cached.
+	     }
      }
 
 <h5>Use of CircleImageView in xml:</h5>
