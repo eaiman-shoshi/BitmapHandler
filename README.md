@@ -59,12 +59,12 @@ this project</h3>
 <h5>Callback:</h5>	   
      public class YOUR_CLASS extends Activity/Fragment implements Callback{
      
-             @Override
-	     public void getDrawable(Drawable drawable, Object name, File file) {
-	         // 'drawable' is the Drawable, which is setted on the ImageView.
-	         // 'name' is the URL or the resource id.
-	         // 'file' is the File, where the setted image is cached.
-	     }
+         @Override
+	      public void getDrawable(Drawable drawable, Object name, File file) {
+	          // 'drawable' is the Drawable, which is setted on the ImageView.
+	          // 'name' is the URL or the resource id.
+	          // 'file' is the File, where the setted image is cached.
+	      }
      }
 
 <h5>Use of CircleImageView in xml:</h5>
