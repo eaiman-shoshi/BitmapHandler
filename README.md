@@ -1,7 +1,7 @@
 BitmapHandler
 =============
 
-<h3>Library project for loading Images on ImageView from resources and internet for Android. OOM error is handled in
+<h3>Library project for loading Images on ImageView from resources or from internet for Android. OOM error is handled in
 this project</h3>
 
 <h3>Feature:</h3>
