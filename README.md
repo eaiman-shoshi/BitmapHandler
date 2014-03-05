@@ -116,13 +116,10 @@ this project</h3>
 <h3>Reference Project:</h3>
 <p>
 This project is build with the help of 'BitmapFun' from Google.
-Google BitmapFun project download Link:
-http://developer.android.com/shareables/training/BitmapFun.zip
-Google 'Displaying Bitmaps Efficiently' tutorial Link:
-http://developer.android.com/training/displaying-bitmaps/index.html
 
-I have really forget about the references about 'CircleImageView' and 'RoundedBitmapDisplayer'.
-But, they were definitely open source.
+Google BitmapFun project download Link:
+http://developer.android.com/shareables/training/BitmapFun.zip. Google 'Displaying Bitmaps Efficiently' tutorial Link:
+http://developer.android.com/training/displaying-bitmaps/index.html. I have really forget about the references about 'CircleImageView' and 'RoundedBitmapDisplayer'.But, they were definitely open source.
 </p>
       
 <h3>Developed by:</h3>
