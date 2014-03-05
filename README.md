@@ -126,7 +126,7 @@ http://developer.android.com/training/displaying-bitmaps/index.html. I have real
      Eaiman Shoshi
      coolshoshi.cse@gmail.com
      
-<h3>License</h3>
+<h3>License:</h3>
      The MIT License (MIT)
 
      Copyright (c) 2014 Eaiman Shoshi
