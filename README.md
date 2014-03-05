@@ -35,23 +35,23 @@ this project</h3>
      
 <h5>In onPause():</h5>     
      @Override
-	   public void onPause() {
-		   super.onPause();
-		   imageLoader.setPauseWork(false);
-		   imageLoader.setExitTasksEarly(true);
-		   imageLoader.flushCache();
-		   mHandler.removeCallbacks(mUpdateTimeTask);
-	   }
+     public void onPause() {
+         super.onPause();
+         imageLoader.setPauseWork(false);
+         imageLoader.setExitTasksEarly(true);
+	 imageLoader.flushCache();
+	 mHandler.removeCallbacks(mUpdateTimeTask); 
+     }
 
 <h5>In onResume():</h5>
-	   @Override
-	   public void onResume() {
-		   super.onResume();
-		   imageLoader.setExitTasksEarly(false);
-	   }
+     @Override
+     public void onResume() {
+         super.onResume();
+	 imageLoader.setExitTasksEarly(false);
+     }
 	   
 <h5>In onDestroy():</h5>	   
-	   @Override
+     @Override
      public void onDestroy() {
          super.onDestroy();
          imageLoader.closeCache();
@@ -61,15 +61,15 @@ this project</h3>
      public class YOUR_CLASS extends Activity/Fragment implements Callback{
      
          @Override
-	       public void getDrawable(Drawable drawable, Object name, File file) {
-		         // 'drawable' is the Drawable, which is setted on the ImageView.
-		         // 'name' is the URL or the resource id.
-		         // 'file' is the File, where the setted image is cached.
-	       }
+	 public void getDrawable(Drawable drawable, Object name, File file) {
+	     // 'drawable' is the Drawable, which is setted on the ImageView.
+	     // 'name' is the URL or the resource id.
+	     // 'file' is the File, where the setted image is cached.
+	 }
      }
 
 <h5>Use of CircleImageView in xml:</h5>
-     // it is recomanded use 'imageLoader.useLoadingImageForFadein(false);'. note that the parameter is 'false'
+     // it is recomanded to use 'imageLoader.useLoadingImageForFadein(false);'. note that the parameter is 'false'
      
      <LinearLayout 
          xmlns:android="http://schemas.android.com/apk/res/android"
@@ -113,3 +113,22 @@ this project</h3>
       ** you can also create this ImageView from Java code also.
       RoundedBitmapDisplayer roundedBitmapDisplayer = new RoundedBitmapDisplayer(getActivity() or this);
       roundedBitmapDisplayer.setRoundPixle(roundPixels);
+      
+<h3>Reference Project:</h3>
+<p>
+This project is build with the help of 'BitmapFun' from Google.
+Google BitmapFun project download Link:
+http://developer.android.com/shareables/training/BitmapFun.zip
+Google 'Displaying Bitmaps Efficiently' tutorial Link:
+http://developer.android.com/training/displaying-bitmaps/index.html
+
+I have really forget about the references about 'CircleImageView' and 'RoundedBitmapDisplayer'.
+But, they were definitely open source.
+</p>
+      
+<h3>Developed by:</h3>
+     Eaiman Shoshi
+     coolshoshi.cse@gmail.com
+     
+Feel free to use this project for your work :)
+
