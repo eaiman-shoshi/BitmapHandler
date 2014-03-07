@@ -284,6 +284,11 @@ public class ImageCache {
         if (mMemoryCache != null) {
             memValue = mMemoryCache.get(data);
         }
+        
+        if(memValue!=null && memValue.getBitmap().isRecycled()){
+        	memValue = null;
+        	Log.d(TAG, "Bitmap was recycled :)");
+        }
 
         if (BuildConfig.DEBUG && memValue != null) {
             Log.d(TAG, "Memory cache hit");
