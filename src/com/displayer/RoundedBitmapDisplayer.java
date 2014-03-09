@@ -142,14 +142,9 @@ public class RoundedBitmapDisplayer extends ImageView {
 
 	/**
 	 * Process incoming {@linkplain Bitmap} to make rounded corners according to target
-	 * {@link com.nostra13.universalimageloader.core.imageaware.ImageViewAware}.<br />
-	 * This method <b>doesn't display</b> result bitmap in {@link ImageView}
-	 *
 	 * @param bitmap      Incoming Bitmap to process
-	 * @param imageAware  Target {@link com.nostra13.universalimageloader.core.imageaware.ImageAware ImageAware} to
-	 *                    display bitmap in
+	 * @param imageView  Target to display bitmap in
 	 * @param roundPixels Rounded pixels of corner
-	 * @param canvas 
 	 * @return Result bitmap with rounded corners
 	 */
 	public static Bitmap roundCorners(Bitmap bitmap, ImageView imageView, int roundPixels) {
