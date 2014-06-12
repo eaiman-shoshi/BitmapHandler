@@ -1,1 +1,7 @@
 *.class
+/assets
+/bin
+
+bin/bitmaphandler.jar
+*.jar
+bin/bitmaphandler.jar
