@@ -2,6 +2,7 @@
 /assets
 /bin
 
-bin/bitmaphandler.jar
+/bin/bitmaphandler.jar
 *.jar
-bin/bitmaphandler.jar
+/bin
+/bin/*
