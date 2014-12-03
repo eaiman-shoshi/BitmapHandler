@@ -98,7 +98,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.bitmaphandler:stroke_color
         */
-        public static final int com_displayer_CircleImageView_stroke_color = 1;
+        public static int com_displayer_CircleImageView_stroke_color = 1;
         /**
           <p>This symbol is the offset where the {@link com.bitmaphandler.R.attr#stroke_width}
           attribute's value can be found in the {@link #com_displayer_CircleImageView} array.
@@ -112,7 +112,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.bitmaphandler:stroke_width
         */
-        public static final int com_displayer_CircleImageView_stroke_width = 0;
+        public static int com_displayer_CircleImageView_stroke_width = 0;
         /** Attributes that can be used with a com_displayer_RoundedBitmapDisplayer.
            <p>Includes the following attributes:</p>
            <table>
@@ -139,6 +139,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.bitmaphandler:round_pixel
         */
-        public static final int com_displayer_RoundedBitmapDisplayer_round_pixel = 0;
+        public static int com_displayer_RoundedBitmapDisplayer_round_pixel = 0;
     };
 }

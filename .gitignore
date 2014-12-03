@@ -1,8 +1,3 @@
 *.class
 /assets
 /bin
-
-/bin/bitmaphandler.jar
-*.jar
-/bin
-/bin/*
