@@ -31,7 +31,7 @@ this project</h3>
 <h5>To load image on ImageView:</h5>
      // use the third parameter of 'loadImage(param1, param2, param3)' always 'null'. this part is for under development.
      imageLoader.loadImage(URL, imageView, null); // to load image from internet
-     imageLoader.loadImage(R.drawable.image_id, imageView, null); // to load image from internet
+     imageLoader.loadImage(R.drawable.image_id, imageView, null); // to load image from resource
      
 <h5>In onPause():</h5>     
      @Override
