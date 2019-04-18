@@ -14,11 +14,13 @@ this project</h3>
 <h4>To load images from internet, use 'ImageFetcher' and from resource, use 'ImageResizer'</h4>
 
 <h5>Variables:</h5>
+
      private static final String IMAGE_CACHE_DIR = "USE_AS_YOU_WISH";//the images will be cashed in this dir
      private ImageFetcher imageLoader; //use to load image from internet
      private ImageResizer imageLoader; //use to load image from resource
 
 <h5>In onCreate():</h5>
+
      int longest = (ScreenHeight > ScreenWidth ? ScreenHeight : ScreenWidth) / 2;
      ImageCacheParams cacheParams = new ImageCacheParams(getActivity() or this, IMAGE_CACHE_DIR);
      cacheParams.setMemCacheSizePercent(0.25f); // Set memory cache to 25% of app memory
@@ -29,11 +31,13 @@ this project</h3>
      imageLoader.addImageCache(getActivity().getSupportFragmentManager(), cacheParams);
      
 <h5>To load image on ImageView:</h5>
+
      // use the third parameter of 'loadImage(param1, param2, param3)' always 'null'. this part is for under development.
      imageLoader.loadImage(URL, imageView, null); // to load image from internet
      imageLoader.loadImage(R.drawable.image_id, imageView, null); // to load image from resource
      
-<h5>In onPause():</h5>     
+<h5>In onPause():</h5>   
+
      @Override
      public void onPause() {
          super.onPause();
@@ -43,22 +47,24 @@ this project</h3>
      }
 
 <h5>In onResume():</h5>
+
      @Override
      public void onResume() {
          super.onResume();
 	     imageLoader.setExitTasksEarly(false);
      }
 	   
-<h5>In onDestroy():</h5>	   
+<h5>In onDestroy():</h5>
+
      @Override
      public void onDestroy() {
          super.onDestroy();
          imageLoader.closeCache();
      }
 
-<h5>Callback:</h5>	   
-     public class YOUR_CLASS extends Activity/Fragment implements Callback{
-     
+<h5>Callback:</h5>	  
+
+     public class YOUR_CLASS extends Activity/Fragment implements Callback{     
          @Override
 	     public void getDrawable(Drawable drawable, Object name, File file) {
 	         // 'drawable' is the Drawable, which is setted on the ImageView.
@@ -68,6 +74,7 @@ this project</h3>
      }
 
 <h5>Use of CircleImageView in xml:</h5>
+
      // it is recomanded to use 'imageLoader.useLoadingImageForFadein(false);'. note that the parameter is 'false'
      
      <LinearLayout 
@@ -92,6 +99,7 @@ this project</h3>
      circleImageView.setStroke(strokeWidth, strokeColor);
 
 <h5>Use of RoundedBitmapDisplayer in xml:</h5>
+
      // it is recomanded use 'imageLoader.useLoadingImageForFadein(false);'. note that the parameter is 'false'
      
      <LinearLayout 
@@ -123,10 +131,11 @@ http://developer.android.com/training/displaying-bitmaps/index.html. I have real
 </p>
       
 <h3>Developed by:</h3>
-     Eaiman Shoshi
-     coolshoshi.cse@gmail.com
+     <a href="https://www.linkedin.com/in/eaimanshoshi/" target="_blank">Eaiman Shoshi</a><br/>
+     <a href="mailto:coolshoshi.cse@gmail.com" target="_top">coolshoshi.cse@gmail.com</a>
      
 <h3>License:</h3>
+
      The MIT License (MIT)
 
      Copyright (c) 2014 Eaiman Shoshi
